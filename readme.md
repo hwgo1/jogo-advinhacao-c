@@ -46,4 +46,4 @@ int resp, nivel;
   
  return 0;
 ```
-<p>Acima usamos os <i>if</i>, <i>else</i> if</i> e <i>else</i>, que são comandos de validação, ou seja, confirmam se uma condição, que fica entre (), é verdadeira antes de seguir com o código. Com eles, fazemos a validação da resposta do usuário e podemos prosseguir, ou não, com o jogo.</p>
+<p>Acima usamos os <i>if</i>, <i>else if</i> e <i>else</i>, que são comandos de validação, ou seja, confirmam se uma condição, que fica entre (), é verdadeira antes de seguir com o código. Com eles, fazemos a validação da resposta do usuário e podemos prosseguir, ou não, com o jogo.</p>
