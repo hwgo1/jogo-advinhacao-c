@@ -46,4 +46,31 @@ int resp, nivel;
   
  return 0;
 ```
-<p>Acima usamos os <i>if</i>, <i>else if</i> e <i>else</i>, que são comandos de validação, ou seja, confirmam se uma condição, que fica entre (), é verdadeira antes de seguir com o código. Com eles, fazemos a validação da resposta do usuário e podemos prosseguir, ou não, com o jogo.</p>
+<p>Acima usamos os <i>if</i>, <i>else if</i> e <i>else</i>, que são comandos de validação, ou seja, confirmam se uma condição, que fica entre (), é verdadeira antes de seguir com o código. Com eles, fazemos a validação da resposta do usuário e podemos prosseguir, ou não, com o jogo. Criamos também a variável nível, que vai ser usada a seguir, caso o jogador decidade jogar o jogo.</p>
+
+```C
+
+switch(nivel){
+  
+     case 1:
+      numTentativas = 20;
+      break;
+  
+     case 2:
+      numTentativas = 15;
+      break;
+  
+     default:
+       numTentativas = 6;
+       break;
+      }
+      
+   for(int i = 1; i<=numTentativas; i++){
+    printf("\nTentativa atual: %d/%d",i,numTentativas);
+        
+    printf("\nChute um número: ");
+    scanf("%d",&chute);
+  
+return 0;
+```
+<p>Nessa parte, usamos mais um novo comando, o <i>switch</i>, que também é uma estrutura de condição. Nesse caso, ele está alterando o número de tentativas do jogador (armazenado na nova variável tipo <b>int</b> numTentativas) com base na dificuldade escolhida.</p>
