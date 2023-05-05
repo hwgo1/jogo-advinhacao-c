@@ -1,8 +1,13 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
 <h1>Jogo de advinhação em C!</h1>
 
 <p>
 Bem-vindos! Nesse repositório eu vou detalhar o processo de criação do <b>"advinhacao.c"</b>, que é um mini-jogo, onde o objetivo do jogador é acertar o número secreto, gerado aleatóriamente pelo computador, em um limite de tentativas que vária de acordo com a dificuldade escolhida, sendo elas: fácil, médio e difícil. O intuito da criação desse jogo é, por meio de um projeto prático, consolidar o meu conhecimento no básico da progamação em C enquanto me divirto. O meu código completo está nos arquivos do repositório. :)
 </p>
+
 
 <h2>Criando a estrutura do código</h2>
 <p>Primeiramente precisamos criar a estrutura do nosso jogo, ou seja, inicializar as variáveis, criar os diálogos com o usuário e válidar as suas respostas.</p>
@@ -73,4 +78,13 @@ switch(nivel){
   
 return 0;
 ```
-<p>Nessa parte, usamos mais um novo comando, o <i>switch</i>, que também é uma estrutura de condição. Nesse caso, ele está alterando o número de tentativas do jogador (armazenado na nova variável tipo <b>int</b> numTentativas) com base na dificuldade escolhida.</p>
+<p>Nessa parte, usamos mais um novo comando, o <i>switch</i>, que também é uma estrutura de condição. Nesse caso, ele está alterando o número de tentativas do jogador (armazenado na nova variável tipo <b>int</b> numTentativas) com base na dificuldade escolhida. Assim que fazemos essa validação, o nosso programa começa o game loop, ou seja, o código do jogo começa, de fato, agora.</p>
+
+<p>Como o prórpio nome já diz, um <i>game loop</i>, nada mais é que um loop responsável por rodar o nosso jogo, já que ele precisa continuar funcionando enquanto o jogador está jogando, e não apenas uma vez (cade game loop pode variar de jogo para jogo, no nosso caso ele só se encerra com a vitória ou derrota do jogador). Para isso, usamos o comando <b>for</b>.</p> 
+
+<p>Parecido com o if, o for funciona validando uma condição que fica entre (), e executa o código sempre verificando primeiro se a condição é verdadeira ou falsa. No nosso jogo, a variável tipo int 'i' serve como contador do nosso loop, toda vez que o nosso bloco de código termina o for soma 1 a nossa várivel e, antes de repetir o bloco, ele verifica se o contador é menor, ou igual, ao nosso número de tentativas e, enquanto essa condição continuar verdadeira, ele repete o bloco.</p>
+
+</p>O bloco em questão pede ao jogador para chutar um número e armazena esse chute na variável 'chute', mas ainda precisamos confirmar se o jogador acertou, ou não, o número, e caso acerte encerrar o game loop.</p>
+
+
+</body>
